@@ -4,3 +4,7 @@ Within the last few years we have heard the boom that bitcoin has had, not only 
 ## Porpouse
 The user expects a simple weekly message of the price and how likely it is to reach this price, thus, leaving the user the option and freedom to choose whether to make an investment for this asset.
 
+
+
+# inspired
+https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.11-Working-with-Time-Series.ipynb
