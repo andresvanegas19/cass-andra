@@ -4,7 +4,8 @@ Las siguientes paginas son los datos recolectados y con los que se hiceron prueb
 - [x] Sep 15, 2014 - Mar 24, 2022 https://finance.yahoo.com/quote/BTC-USD/history?period1=1410825600&period2=1648166400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true (yahoo-2014-2022)
 
 Date | Open | High | Low | Close | Adj Close | Volume
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+|--|--|--|--|--|--|--|--|
+| int | float  | float | float   | float | float   | float | float   |
 
 - [x] Jul 18, 2010 - Mar 27, 2022 https://www.investing.com/crypto/bitcoin/historical-data (investiong-2010-202)
 
