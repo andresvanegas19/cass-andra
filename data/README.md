@@ -1,31 +1,26 @@
 # Data collection
 
-Las siguientes paginas son los datos recolectados y con los que se hiceron pruebas para hacer el proyecto:
-- [x] Sep 15, 2014 - Mar 24, 2022 https://finance.yahoo.com/quote/BTC-USD/history?period1=1410825600&period2=1648166400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true (yahoo-2014-2022)
+The following pages are the data collected and tested for this project:
 
-Date | Open | High | Low | Close | Adj Close | Volume
-|--|--|--|--|--|--|--|--|
-| int | float  | float | float   | float | float   | float | float   |
+- [x] Sep 15, 2014 - Mar 24, 2022 https://finance.yahoo.com/quote/BTC-USD/history?period1=1410825600&period2=1648166400&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true (yahoo-2014-2022)
+      Date,Open,High,Low,Close,Adj Close,Volume
 
 - [x] Jul 18, 2010 - Mar 27, 2022 https://www.investing.com/crypto/bitcoin/historical-data (investiong-2010-202)
+      "Date","Price","Open","High","Low","Vol.","Change %"
 
+- [x] 2009-01-09 - 2018-11-22 https://pkgstore.datahub.io/cryptocurrency/bitcoin/bitcoin_csv/data/b81f78f25fc22fc0eda6bedaed434c05/bitcoin_csv.csv
+      date,txVolume(USD),adjustedTxVolume(USD),txCount,marketcap(USD),price(USD),exchangeVolume(USD),generatedCoins,fees,activeAddresses,averageDifficulty,paymentCount,medianTxValue(USD),medianFee,blockSize,blockCount (datahub-2009-2018)
 
+- [x] 2010-07-22 - 2020-04-01 https://data.bitcoinity.org/markets/market_cap/all/USD?r=hour&t=l Time, marketcap (market-capitalization-bitcoinity-2010-2020)
 
+- [x] 2010-07-17 - 2022-03-26 https://data.bitcoinity.org/markets/tradespm/all?c=e&r=day&t=a Time,bitfinex,bitflyer,bithumb,bitstamp,btcchina,coinbase,huobi,kraken,okcoin,other (trade-per-min-bitcoinity-2010-2022)
 
-https://pkgstore.datahub.io/cryptocurrency/bitcoin/bitcoin_csv/data/b81f78f25fc22fc0eda6bedaed434c05/bitcoin_csv.csv
+- [x] 2010-07-17 - 2022-03-26 https://data.bitcoinity.org/markets/volume/all?c=e&r=day&t=b Time,bitfinex,bitstamp,btcchina,coinbase,huobi,kraken,lakebtc,mtgox,okcoin,other (trading-volume-2010-2022)
 
-The data btc and btc-test are extracted from:
-https://www.investing.com/crypto/bitcoin/historical-data
+### IMPORTANT NOTE
+```
+The following dataset is not loading into the github for space restriction, also will be load into google drive space to see all the data the model used
+```
 
-data from 07/16/2010 - today (03/24/2022)
-https://data.bitcoinity.org/markets/price/all/USD?r=day&t=l
-
-All analysis and getting the historical data is from this
-http://api.bitcoincharts.com/v1/csv/
-
-Getting the volume from yahoo
-https://query1.finance.yahoo.com/v7/finance/download/BTC-USD?period1=1410825600&period2=1648166400&interval=1d&events=history&includeAdjustedClose=true
-
-Other dataset be at the cloud for weith resons
-
-### TODO: see what terms and conditions
+TODO:
+-[ ] See the complince of the data and the things that can be performed
