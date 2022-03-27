@@ -1,5 +1,7 @@
 # Data processing
 
+all the data processing and make one data
+
 ## Source of data
 For data collection it is necessary to first form a robust database with hourly interval data for 6 years, an average of 52560 data to 3155760 data.
 
