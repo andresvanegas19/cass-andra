@@ -17,10 +17,14 @@ The following pages are the data collected and tested for this project:
 
 - [x] 2010-07-17 - 2022-03-26 https://data.bitcoinity.org/markets/volume/all?c=e&r=day&t=b Time,bitfinex,bitstamp,btcchina,coinbase,huobi,kraken,lakebtc,mtgox,okcoin,other (trading-volume-2010-2022)
 
+- [x] 2009-01-03 - 2022-03-26 https://www.blockchain.com/charts/total-bitcoins Timestamp,total-bitcoins (circulating-bitcoin-2009-2022)
+
+- [x] 2009-01-17 - 2022-03-25 https://www.blockchain.com/charts/n-transactions Timestamp,n-transactions (confirm-transaction-2009-2022)
+
 ### IMPORTANT NOTE
+
 ```
 The following dataset is not loading into the github for space restriction, also will be load into google drive space to see all the data the model used
 ```
 
-TODO:
--[ ] See the complince of the data and the things that can be performed
+TODO: -[ ] See the complince of the data and the things that can be performed
