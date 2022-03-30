@@ -10,8 +10,13 @@ The user expects a simple weekly message of the price and how likely it is to re
 - [ ] El mejoramiento del modelo
 - [ ] Despliegue automatico
 - [ ] Mejoramiento de recoleccion de datos de informacion
+- [ ] Usar monedas como el JPY ya que hay mas movimientos y compra con esta moneda
+- [ ] Mirar que otro tipo de fuente provee mas datos y mas exactos
+- [ ] Analizar los sentimientos de la gente en las noticias, los tweets y foros de reddit durante la semana para agregarlo como opcion
+
 
 
 # inspired
 https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.11-Working-with-Time-Series.ipynb
 https://www.investopedia.com/ask/answers/05/logvslinear.asp#ixzz4pKMuY5HA
+https://arxiv.org/pdf/1406.1078.pdf
