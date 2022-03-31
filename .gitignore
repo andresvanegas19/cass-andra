@@ -2,6 +2,7 @@ data/*.csv
 .env
 .DS_Store
 # Byte-compiled / optimized / DLL files
+env
 __pycache__/
 *.py[cod]
 

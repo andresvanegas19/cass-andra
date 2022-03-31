@@ -15,6 +15,8 @@ The user expects a simple weekly message of the price and how likely it is to re
 - [ ] Analizar los sentimientos de la gente en las noticias, los tweets y foros de reddit durante la semana para agregarlo como opcion
 
 
+# Collab notebook
+https://colab.research.google.com/drive/16y0QVMdaF4eqRI26uqBeWcKKPaK7Opxh#scrollTo=d9b08jYQ4_vT
 
 # inspired
 https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.11-Working-with-Time-Series.ipynb
