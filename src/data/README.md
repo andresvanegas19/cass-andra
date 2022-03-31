@@ -24,6 +24,11 @@ The following pages are the data collected and tested for this project:
 - [x] 2012-01-01 - 2017-10-20 http://api.bitcoincharts.com/v1/csv/ Timestamp,Open,High,Low,Close,Volume*(BTC),Volume*(Currency),Weighted_Price (bitstamp-1-min-transaction-2012-2017)
 
 - [x] 2009-01-03 - 2022-03-23 Timestamp,trade-volume https://www.blockchain.com/charts/trade-volume (trade-volume-2009-2022.csv)
+
+## load the dataset
+
+For loading all the data should be execute first the script of "request-data.py" for loading all the datasets, nad start see how the model works
+
 ### IMPORTANT NOTE
 
 ```

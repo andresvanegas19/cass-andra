@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env python3
 """ load training datasets """
 import pandas as pd
 

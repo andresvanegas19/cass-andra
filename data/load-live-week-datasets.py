@@ -1,3 +1,0 @@
-
-
-# load this envLIVE_PRICING_CRYPTOCOMPARE
