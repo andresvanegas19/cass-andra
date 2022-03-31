@@ -9,7 +9,7 @@ def load_n_transaction() -> pd.DataFrame:
     """
     # n_transactions = pd.read_csv(
     return pd.read_csv(
-        "confirm-transaction-2009-2022.csv"
+        "data/confirm-transaction-2009-2022.csv"
     )
 
 
@@ -22,7 +22,7 @@ def load_fee_per_transaction_dataset() -> pd.DataFrame:
     """
     # fee_transaction = pd.read_csv(
     return pd.read_csv(
-        "datahub-2009-2018.csv"
+        "data/datahub-2009-2018.csv"
     )
 
 
@@ -32,7 +32,7 @@ def number_of_transaction_per_month_dataset() -> pd.DataFrame:
     """
     # n_trade = pd.read_csv(
     return pd.read_csv(
-        "trade-per-min-bitcoinity-2010-2022.csv"
+        "data/trade-per-min-bitcoinity-2010-2022.csv"
     )
 
 
@@ -45,7 +45,7 @@ def trading_volume_dataset() -> pd.DataFrame:
     """
     # trading_volume = pd.read_csv(
     return pd.read_csv(
-        "trading-volume-2010-2022.csv"
+        "data/trading-volume-2010-2022.csv"
     )
 
 
@@ -58,7 +58,7 @@ def transaction_per_min_dataset() -> pd.DataFrame:
     """
     # transactions_min = pd.read_csv("bitstamp-1-min-transaction-2012-2017.csv")
     return pd.read_csv(
-        "bitstamp-1-min-transaction-2012-2017.csv"
+        "data/bitstamp-1-min-transaction-2012-2017.csv"
     )
 
 
@@ -69,7 +69,7 @@ def trade_volume_dataset() -> pd.DataFrame:
     Returns:
         pd.DataFrame: _description_
     """
-    return pd.read_csv("trade-volume-2009-2022.csv")
+    return pd.read_csv("data/trade-volume-2009-2022.csv")
 
 # circulating_bitcoins = pd.read_csv(
 #     "circulating-bitcoin-2009-2022.csv"
