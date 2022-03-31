@@ -15,6 +15,11 @@ The user expects a simple weekly message of the price and how likely it is to re
 - [ ] Analizar los sentimientos de la gente en las noticias, los tweets y foros de reddit durante la semana para agregarlo como opcion
 
 
+## rquirements
+Para el uso de este proyecto se debe usar las siguientes tecnologias
+- mirar el freeze
+- python [3.9.10]
+
 # Collab notebook
 https://colab.research.google.com/drive/16y0QVMdaF4eqRI26uqBeWcKKPaK7Opxh#scrollTo=d9b08jYQ4_vT
 
