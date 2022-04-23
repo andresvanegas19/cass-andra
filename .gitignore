@@ -5,6 +5,7 @@ src/data/*.csv
 env
 __pycache__/
 *.py[cod]
+gar
 
 # C extensions
 *.so
