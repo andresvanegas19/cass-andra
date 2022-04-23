@@ -3,11 +3,9 @@
 import pandas as pd
 
 
-def circulating_bitcoins():
-    return "a"
-    # pd.read_csv(
-    #     "/content/drive/MyDrive/data/circulating-bitcoin-2009-2022.csv"
-    # )
+def circulating_bitcoins(path):
+
+    return pd.read_csv(path)
 
 # n_transactions = pd.read_csv(
 #     "/content/drive/MyDrive/data/confirm-transaction-2009-2022.csv"
