@@ -1,0 +1,33 @@
+brotlipy==0.7.0
+certifi==2021.10.8
+cffi @ file:///Users/ktietz/Code/oss/ci_pkgs/cffi_1624487777258/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+conda==4.11.0
+conda-package-handling @ file:///Users/ktietz/demo/mc3/conda-bld/conda-package-handling_1630675621471/work
+cryptography @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-cn99yw1m/cryptography_1639499039549/work
+cycler==0.11.0
+fonttools==4.33.2
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+joblib==1.1.0
+kiwisolver==1.4.2
+matplotlib==3.5.1
+numpy==1.22.3
+packaging==21.3
+pandas==1.4.2
+Pillow==9.1.0
+pycosat==0.6.3
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1635333100036/work
+pyparsing==3.0.8
+PySocks @ file:///Users/ktietz/Code/oss/ci_pkgs/pysocks_1626781349491/work
+python-dateutil==2.8.2
+pytz==2022.1
+requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
+ruamel-yaml-conda @ file:///Users/ktietz/demo/mc3/conda-bld/ruamel_yaml_1629464769899/work
+scikit-learn==1.0.2
+scipy==1.8.0
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+sklearn==0.0
+threadpoolctl==3.1.0
+tqdm @ file:///tmp/build/80754af9/tqdm_1635330843403/work
+urllib3==1.26.7

@@ -3,9 +3,55 @@
 import pandas as pd
 
 
-def circulating_bitcoins(path):
+COMPLETE_PATH = 'https://drive.google.com/uc?id='
+DATASETS = {
+    "nasqad": 'https://drive.google.com/file/d/1-aur5DlrI4XuB3aziYMnYE6YMzcp0aIk/view?usp=sharing',
+}
 
+
+def circulating_bitcoins(path):
+    """
+    Loads the circulating bitcoins dataset.
+
+    Args:
+        path (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     return pd.read_csv(path)
+
+
+def bitstamp_1_min_transaction(path):
+    """
+    Loads the bitstamp 1 min transaction dataset.
+
+    Args:
+        path (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+    return pd.read_csv(path)
+
+
+def nasqad_historical():
+    """
+    Retruning the string
+
+    Returns:
+        _type_: _description_
+    """
+
+    path: str = DATASETS.get("nasqad")
+    if not path:
+        return ""
+
+    return pd.read_csv(
+        f"{COMPLETE_PATH}{path.split('/')[-2]}",
+        parse_dates=["Date"]
+    )
+
 
 # n_transactions = pd.read_csv(
 #     "/content/drive/MyDrive/data/confirm-transaction-2009-2022.csv"

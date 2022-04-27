@@ -1,12 +1,15 @@
-from src.data.load.load_training_datasets import circulating_bitcoins
+import pandas as pd
 
 
-print(circulating_bitcoins("src/data/circulating-bitcoin-2009-2022.csv"))
+def change_date_to_column(df, is_timestap=False):
+    """_summary_
 
-# import src.processing.join_data
-# from load_training_datasets import *
-# from load.load_training_datasets import *
-# import processing.join_data
-# from btc_messages.data.load_training_datasets import *
-
-# print(circulating_bitcoins())
+    Args:
+        df (_type_): _description_
+        is_timestap (bool, optional): _description_. Defaults to False.
+    """
+    if is_timestap:
+        df["Timestamp"] = pd.to_datetime(df.Timestamp, unit='s')
+        df.set_index("Timestamp", inplace=True)
+    else:
+        return
