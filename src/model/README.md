@@ -18,5 +18,9 @@ RNN vs LSTM vs GRU
 # NOTES
 
 ```
+    model LSTM layers with d 32 layers hidden with dropout will be overfitting.
+```
+
+```
     The sequence == 100, means the model learn long-term between time steps of 100d at a time.
 ```
