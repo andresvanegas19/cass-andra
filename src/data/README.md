@@ -25,6 +25,8 @@ The following pages are the data collected and tested for this project:
 
 - [x] 2009-01-03 - 2022-03-23 Timestamp,trade-volume https://www.blockchain.com/charts/trade-volume (trade-volume-2009-2022.csv)
 
+- [x] 03-08-2019 - 2022-04-26 https://www.nasdaq.com/market-activity/cryptocurrency/btc/historical Date,Close/Last,Volume,Open,High,Low (nasdaq-historical-2022-2019.csv)
+
 ## load the dataset
 
 For loading all the data should be execute first the script of "request-data.py" for loading all the datasets, nad start see how the model works
