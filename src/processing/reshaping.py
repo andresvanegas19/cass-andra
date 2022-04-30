@@ -1,3 +1,7 @@
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+from tensorflow.keras.layers import GRU
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
@@ -86,9 +90,6 @@ def create_dataset(dataset, time_step=1):
         dataY.append(dataset[i + time_step, 0])
     return numpy.array(dataX), numpy.array(dataY)
 
-from keras.models import Sequential
-from tensorflow.keras.layers import  GRU
-from keras.layers import Dense
 
 def normalize_model(dataset):
     scaler = MinMaxScaler(feature_range=(0, 1))
@@ -103,7 +104,6 @@ def normalize_model(dataset):
     time_step = 5
     X_train, y_train = create_dataset(train_data, time_step)
     X_test, y_test = create_dataset(test_data, time_step)
-    
 
     X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
     X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
@@ -115,7 +115,7 @@ def normalize_model(dataset):
     model.add(GRU(3))
     model.add(Dense(1))
     model.compile(loss='mean_squared_error', optimizer='adam')
-    
+
     # print("declare the layers")
     print(model.describe())
 
