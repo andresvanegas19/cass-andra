@@ -24,3 +24,9 @@ RNN vs LSTM vs GRU
 ```
     The sequence == 100, means the model learn long-term between time steps of 100d at a time.
 ```
+
+```
+    Signo de mal ajuste pudo ser en el entrenamiento de prueba, resolverlo puede aumentar el numero de epocas.
+```
+
+Mean Absolute Error (MAE) which is the average of the absolute errors in the test data.

@@ -28,22 +28,17 @@ def set_index_to_data(df, column_data) -> pd.DataFrame:
 
 
 def cleaning():
-    # replacecing the number of transaction
-    n_transaction = set_index_to_data(load_n_transaction(), "Timestamp")
-
-    # clean the fee per transaction dataset
+    """_summary_
+    """
     fee_transaction = load_fee_per_transaction_dataset(
     )[["date", "fees",	"averageDifficulty"]]
     fee_transaction["date"] = fee_transaction['date'].apply(
         lambda row: str(pd.Timestamp(row))
     )
     fee_transaction = set_index_to_data(fee_transaction, "date")
-
-    # clean the number of transaction per month dataset
     n_trade["Time"] = n_trade['Time'].apply(
         lambda row: change_date_formate(row)
     )
     n_trade.set_index("Time", inplace=True)
     n_trade["n_trade"] = n_trade.sum(axis=1)
     n_trade = n_trade[["n_trade"]]
-    print(n_trade)

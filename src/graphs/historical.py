@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from src.data.load.load_training_datasets import bitstamp_1_min_transaction, nasqad_historical
-from src.processing.join import change_date_to_column
+from src.data.load.load_datasets import bitstamp_1_min_transaction, nasqad_historical
+from src.processing.modify_dataframe import change_date_to_column
 
 
 def main_historical_graph():
