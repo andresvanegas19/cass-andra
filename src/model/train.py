@@ -3,15 +3,15 @@ from tensorflow.keras.callbacks import Callback
 # from create import create_model
 # from src.processing.split import preprocess
 # from src.processing.reshaping import scaling
-from src.data.load import nasqad_historical
+# from src.data.load import nasqad_historical
 
 
-def train_lstm():
-    """
-    training the lstm model
-    """
-    len_sq = 100
-    df = nasqad_historical()
+# def train_lstm():
+#     """
+#     training the lstm model
+#     """
+#     len_sq = 100
+#     df = nasqad_historical()
 
     # X_train, y_train, X_test, y_test = preprocess(
     #     scaling(df),
