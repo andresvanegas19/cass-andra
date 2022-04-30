@@ -30,4 +30,4 @@ df = concat_dataset_to_one(df_bistamp, df_nasqad)
 # normalize_model
 # print(df)
 model = normalize_model(df)
-model.describe()
+print(model.describe())

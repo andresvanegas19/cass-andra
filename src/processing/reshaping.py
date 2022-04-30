@@ -1,6 +1,7 @@
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
+from src.model.train import train_gru
 from src.processing.reshaping import sequences_convert
 
 
@@ -97,19 +98,26 @@ def normalize_model(dataset):
     test_size = len(df1)-training_size
     train_data, test_data = df1[0:training_size,
                                 :], df1[training_size:len(df1), :1]
+    print("split data")
 
     time_step = 5
     X_train, y_train = create_dataset(train_data, time_step)
-    X_test, ytest = create_dataset(test_data, time_step)
+    X_test, y_test = create_dataset(test_data, time_step)
+    
 
     X_train = X_train.reshape(X_train.shape[0], X_train.shape[1], 1)
     X_test = X_test.reshape(X_test.shape[0], X_test.shape[1], 1)
 
+    print("Split the data")
     model = Sequential()
     model.add(GRU(3, return_sequences=True, input_shape=(time_step, 1)))  # GRU
     model.add(GRU(3, return_sequences=True))
     model.add(GRU(3))
     model.add(Dense(1))
     model.compile(loss='mean_squared_error', optimizer='adam')
+    
+    # print("declare the layers")
+    print(model.describe())
 
-    return model
+    # return model
+    train_gru(model, X_train, y_train, X_test, y_test)
