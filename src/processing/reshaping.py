@@ -117,7 +117,7 @@ def normalize_model(dataset):
     model.compile(loss='mean_squared_error', optimizer='adam')
 
     # print("declare the layers")
-    print(model.describe())
+    # print(model.describe())
 
     # return model
     train_gru(model, X_train, y_train, X_test, y_test)
