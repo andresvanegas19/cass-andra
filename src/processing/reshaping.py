@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
 from src.model.train import train_gru
-from src.processing.reshaping import sequences_convert
+# from src.processing.reshaping import sequences_convert
 
 
 def preprocess(data, len_sq, train_split):
@@ -88,7 +88,7 @@ def create_dataset(dataset, time_step=1):
         a = dataset[i:(i+time_step), 0]
         dataX.append(a)
         dataY.append(dataset[i + time_step, 0])
-    return numpy.array(dataX), numpy.array(dataY)
+    return np.array(dataX), np.array(dataY)
 
 
 def normalize_model(dataset):
