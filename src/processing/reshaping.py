@@ -85,6 +85,9 @@ def create_dataset(dataset, time_step=1):
         dataY.append(dataset[i + time_step, 0])
     return numpy.array(dataX), numpy.array(dataY)
 
+from keras.models import Sequential
+from tensorflow.keras.layers import  GRU
+from keras.layers import Dense
 
 def normalize_model(dataset):
     scaler = MinMaxScaler(feature_range=(0, 1))
@@ -108,3 +111,5 @@ def normalize_model(dataset):
     model.add(GRU(3))
     model.add(Dense(1))
     model.compile(loss='mean_squared_error', optimizer='adam')
+
+    return model

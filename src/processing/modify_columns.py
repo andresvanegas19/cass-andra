@@ -8,11 +8,11 @@ def change_date_to_column(dataframe, is_timestap=False):
         df (_type_): _description_
         is_timestap (bool, optional): _description_. Defaults to False.
     """
-    if is_timestap:
-        dataframe["Timestamp"] = pd.to_datetime(dataframe.Timestamp, unit='s')
-        dataframe.set_index("Timestamp", inplace=True)
-    else:
-        return
+    # if is_timestap:
+    dataframe["Timestamp"] = pd.to_datetime(dataframe.Timestamp, unit='s')
+    dataframe.set_index("Timestamp", inplace=True)
+    # else:
+    #     return
 
 
 def change_column_name(dataframe, columns):
@@ -28,21 +28,20 @@ def change_column_name(dataframe, columns):
     """
     # ["Open", "High",	"Low",	"Close",	"Volume_(BTC)"]
     dataframe_bitstamp = dataframe[columns]
-    dataframe_bitstamp.rename(
+    return dataframe_bitstamp.rename(
         columns={'Volume_(BTC)': 'Volume'},
-        inplace=True
+        # inplace=True
     )
-
-    return dataframe_bitstamp
 
 
 def nasqad(dataframe):
-    df_nasqad = dataframe[["Open",	"High",	"Low",	"Close", "Volume", "Date"]]
-    df_nasqad["Date"] = df_nasqad['Date'].apply(
+    new_dataframe = dataframe[["Open",	"High",
+                               "Low",	"Close", "Volume", "Date"]]
+    new_dataframe['Date'].apply(
         lambda row: str(pd.Timestamp(row))
     )
 
-    df_nasqad = df_nasqad.loc[df_nasqad['Date'] > '2017-10-21']
-    df_nasqad.set_index("Date", inplace=True)
+    new_dataframe.loc[new_dataframe['Date'] > '2017-10-21']
+    new_dataframe.set_index("Date", inplace=True)
 
-    return df_nasqad
+    return new_dataframe
