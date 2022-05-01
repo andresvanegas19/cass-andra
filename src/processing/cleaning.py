@@ -6,7 +6,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
-from processing.utils import change_date_formate
+# from processing.utils import change_date_formate
 from data.load_training_datasets import (
     load_n_transaction,
     load_fee_per_transaction_dataset,
@@ -30,21 +30,21 @@ def set_index_to_data(df, column_data) -> pd.DataFrame:
     return df.set_index(column_data)
 
 
-def cleaning():
-    """_summary_
-    """
-    fee_transaction = load_fee_per_transaction_dataset(
-    )[["date", "fees",	"averageDifficulty"]]
-    fee_transaction["date"] = fee_transaction['date'].apply(
-        lambda row: str(pd.Timestamp(row))
-    )
-    fee_transaction = set_index_to_data(fee_transaction, "date")
-    n_trade["Time"] = n_trade['Time'].apply(
-        lambda row: change_date_formate(row)
-    )
-    n_trade.set_index("Time", inplace=True)
-    n_trade["n_trade"] = n_trade.sum(axis=1)
-    n_trade = n_trade[["n_trade"]]
+# def cleaning():
+#     """_summary_
+#     """
+#     fee_transaction = load_fee_per_transaction_dataset(
+#     )[["date", "fees",	"averageDifficulty"]]
+#     fee_transaction["date"] = fee_transaction['date'].apply(
+#         lambda row: str(pd.Timestamp(row))
+#     )
+#     fee_transaction = set_index_to_data(fee_transaction, "date")
+#     n_trade["Time"] = n_trade['Time'].apply(
+#         lambda row: change_date_formate(row)
+#     )
+#     n_trade.set_index("Time", inplace=True)
+#     n_trade["n_trade"] = n_trade.sum(axis=1)
+#     n_trade = n_trade[["n_trade"]]
 
 
 SEQ_LEN = 100
