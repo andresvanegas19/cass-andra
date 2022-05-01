@@ -30,7 +30,7 @@ def nasqad_historical(dataset=DATASETS):
     path = dataset.get("nasqad")
 
     return pd.read_csv(
-        f"{COMPLETE_PATH}{path.split('/')[-2]}",
+        COMPLETE_PATH + path.split('/')[-2],
         parse_dates=["Date"]
     )
 
