@@ -7,14 +7,14 @@ from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
 # from processing.utils import change_date_formate
-from data.load_training_datasets import (
-    load_n_transaction,
-    load_fee_per_transaction_dataset,
-    number_of_transaction_per_month_dataset,
-    trading_volume_dataset,
-    transaction_per_min_dataset
+# from data.load_training_datasets import (
+#     load_n_transaction,
+#     load_fee_per_transaction_dataset,
+#     number_of_transaction_per_month_dataset,
+#     trading_volume_dataset,
+#     transaction_per_min_dataset
 
-)
+# )
 
 
 def set_index_to_data(df, column_data) -> pd.DataFrame:
