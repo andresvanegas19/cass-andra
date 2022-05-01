@@ -17,19 +17,19 @@ from src.processing.cleaning import test
 
 
 nasqad_data = nasqad_historical()
-test(nasqad_data)
+# test(nasqad_data)
 # bistamp = download_csv_load_drive()
 
 # change_date_to_column(bistamp)
 # df_bistamp = change_column_name(
 #     bistamp, ["Open", "High",	"Low",	"Close", "Volume_(BTC)"])
 # # print(df_bistamp)
-# df_nasqad = nasqad(nasqad_data)
+df_nasqad = nasqad(nasqad_data)
 # # print(df_nasqad)
 
 # df = concat_dataset_to_one(df_bistamp, df_nasqad)
 
 # # normalize_model
 # # print(df)
-# model = normalize_model(df)
+model = normalize_model(df_nasqad)
 # print(model.describe())
