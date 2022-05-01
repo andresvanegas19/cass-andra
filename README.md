@@ -21,12 +21,10 @@ The user expects a simple weekly message of the price and how likely it is to re
 - [ ] Probar el modelo con teoremas matematicos o con ecuaciones como SMA
 - [ ] Buscar mas datos que podrian influenciar como la cantidad de tweets y de noticias durante esos dias
 
-## rquirements
+## requirements
 
-Para el uso de este proyecto se debe usar las siguientes tecnologias
+Los pre requisitos es tener: python==3.7
 
-- mirar el freeze
-- python [3.9.10]
 
 # Data
 

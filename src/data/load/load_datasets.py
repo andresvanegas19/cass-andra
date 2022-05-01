@@ -27,7 +27,7 @@ def nasqad_historical(dataset=DATASETS):
         the dataframe from nasqad
     """
 
-    path: str = dataset.get("nasqad")
+    path = dataset.get("nasqad")
 
     return pd.read_csv(
         f"{COMPLETE_PATH}{path.split('/')[-2]}",
