@@ -36,7 +36,8 @@ def nasqad_historical(dataset=DATASETS):
 
 
 def download_csv_load_drive(dataset=DATASETS, name="bistamp"):
-    filename = f"{name}.csv"
+    # filename = f"{name}.csv"
+    filename = name + ".csv"
 
     # si existe el archivo y esta en modo debug no borrarlo
     # TODO: MODIFY THIS FOR NOT CONSUME MEMORY
