@@ -5,7 +5,7 @@ from tensorflow.keras.layers import GRU
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 import pandas as pd
-from src.model.train import train_gru
+from src.create_model.model.train import train_gru
 # from src.processing.reshaping import sequences_convert
 
 
