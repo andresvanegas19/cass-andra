@@ -31,4 +31,3 @@ def create_model():
         optimizer='adam'
     )
     return model
-
