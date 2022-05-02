@@ -1,6 +1,6 @@
-# Cas$sandra v1
+# Cas$sandra
 
-### [**Visit the website.**](https://medium.com/@andresreyesv/the-path-to-create-proyect-for-predict-the-bitcoin-price-88054c9d7ec)
+### [**Visit the blog**](https://medium.com/@andresreyesv/the-path-to-create-proyect-for-predict-the-bitcoin-price-88054c9d7ec)
 
 Within the last few years we have heard the boom that bitcoin has had, not only because of the blockchain technology, but also because of the short-term and high-risk investment viability of bitcoin. For this reason we want to make a bot that gives weekly investment recommendations of this currency to users who subscribe so they can use it as a tool.
 
@@ -12,7 +12,9 @@ The user expects a simple weekly message of the price and how likely it is to re
 
 ## requirements
 
-Los pre requisitos es tener: python==3.7
+Los pre requisitos es tener:
+    python==3.7
+    requirement.txt
 
 # Data
 
@@ -20,7 +22,8 @@ For loading all the data you should go to this google drive, and download an put
 
 # architecture
 
-Como todo tiene cresimiento es asi que esta arquitectura se puede mejorar. Este solo es un sencillo ejemplo de como funciona
+As everything has growth, this architecture can be improved. This is just a simple example of how it works
+
 ![Screenshot](path.png)
 
 # Collab notebook
