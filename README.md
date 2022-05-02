@@ -1,6 +1,6 @@
 # Cas$sandra v1
 
-### ![Blog post](https://medium.com/@andresreyesv/the-path-to-create-proyect-for-predict-the-bitcoin-price-88054c9d7ec)
+### [**Visit the website.**](https://medium.com/@andresreyesv/the-path-to-create-proyect-for-predict-the-bitcoin-price-88054c9d7ec)
 
 Within the last few years we have heard the boom that bitcoin has had, not only because of the blockchain technology, but also because of the short-term and high-risk investment viability of bitcoin. For this reason we want to make a bot that gives weekly investment recommendations of this currency to users who subscribe so they can use it as a tool.
 
